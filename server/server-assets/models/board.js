@@ -1,7 +1,6 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 var schemaName = 'board'
-var ObjectId = 
 
 let comment = new Schema({
     body: {type: String, required: true},
@@ -17,7 +16,7 @@ let task = new Schema({
 let list = new Schema({
     title: {type: String, required: true},
     author: { type: String, required: true },
-    tasks: [tasks],
+    tasks: [task],
 
 })
 let board = new Schema({
