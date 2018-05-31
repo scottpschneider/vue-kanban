@@ -9,4 +9,4 @@ let comment = new Schema({
     parentId: {type: String, required: true}
 })
 
-module.exports = mognoose.model(schemaName, comment)
+module.exports = mongoose.model(schemaName, comment)

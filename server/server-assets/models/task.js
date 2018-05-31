@@ -9,4 +9,4 @@ let task = new Schema({
     parentId: {type: String, required: true}
 })
 
-module.exports = mognoose.model(schemaName, task)
+module.exports = mongoose.model(schemaName, task)
